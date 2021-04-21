@@ -51,10 +51,13 @@ function App() {
     <div className="App">
       <Nav />
       <div className="spacer"></div>
+      <div className='container'>
       <h1>hello & Welcome to Fire🔥 chat App.</h1>
       <p>A place to paste some important links, code or to chill out! 😁</p>
       <Text />
       <h2>WELCOME {user}</h2>
+      </div>
+      
       <div className="m-auto">
       <form className="app_form">
       <FormControl>

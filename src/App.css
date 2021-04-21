@@ -53,3 +53,29 @@ body{
   font-weight: 900;
   margin: auto;
 }
+
+@media only screen and (max-width : 540px)  and (orientation : portrait) {
+  .container-message{
+    margin:50px auto 110px auto;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  .app_form{
+  
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 1;
+    width: 80%;
+    margin: 5px 10% !important;
+    color: rgb(41, 41, 41) !important;
+    background-color: rgb(209, 209, 209) ;
+    border-radius: 50px;
+  
+  }
+  
+  }

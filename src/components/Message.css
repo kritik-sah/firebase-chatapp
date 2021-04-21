@@ -1,15 +1,12 @@
 .message{
-    padding: -5px !important;
     margin: 10px ;
     width: fit-content;
-    
 }
 .message_user{
     margin-left: auto;
     color: aliceblue;
     text-align: left !important;
-    
-    
+       
 }
 .message_usercard{
     padding: -25px !important;
@@ -25,4 +22,37 @@
     background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%) !important;
     border-radius: 50px !important;
     box-shadow:  #000000 3px 1px 15px !important;
+}
+
+@media only screen and (max-width : 540px)  and (orientation : portrait) {
+    .message{
+        margin: 2px ;
+        width: fit-content;
+    }
+    .message_user{
+        margin-left: auto;
+        color: aliceblue;
+        text-align: left !important;
+           
+    }
+    .message_usercard{
+    max-width: 95%;
+    padding: -25px !important;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    text-shadow: #ffffff8a 0px 0px 5px;
+    border-radius: 50px !important;
+    box-shadow:  #000000 -3px 1px 15px !important;
+  
+    
+}
+.message_guestcard{
+    max-width: 95%;
+    padding: -5px !important;
+    text-shadow: #ffffff8a 0px 0px 5px;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%) !important;
+    border-radius: 50px !important;
+    box-shadow:  #000000 3px 1px 15px !important;
+    margin: 30px 0px !important;
+}
+    
 }

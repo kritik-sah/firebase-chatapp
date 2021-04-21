@@ -9,12 +9,12 @@ const Message =  forwardRef(({message ,user} , ref) => {
         <div ref={ref} className={`message ${isUser && 'message_user'}`}>
             <Card className={isUser ? "message_usercard": "message_guestcard"}>
                 <CardContent>
-                    <Typography variant="h5" component="h4">
+                    <Typography variant="p" component="h6">
                     {message.user}🤞: &nbsp; {message.message}
                     </Typography>
                 </CardContent>
             </Card>
-            {/* <h3>{props.sender}🤞: &nbsp; {props.text}</h3> */}
+            
         </div>
     )
 });
