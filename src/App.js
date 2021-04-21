@@ -60,12 +60,12 @@ function App() {
       
       <div className="m-auto">
       <form className="app_form">
-      <FormControl>
+      <FormControl >
         <InputLabel>Type your message here!</InputLabel>
-        <Input value={input} onChange={event => setInput(event.target.value)}/>
+        <Input className="form-input" value={input} onChange={event => setInput(event.target.value)}/>
       </FormControl>
 
-      <IconButton disabled={!input} type="submit" onClick={sendMessage} variant="outlined" color="primary">
+      <IconButton  disabled={!input} type="submit" onClick={sendMessage} variant="outlined" color="primary">
       <SendIcon />
       </IconButton>
       </form>
