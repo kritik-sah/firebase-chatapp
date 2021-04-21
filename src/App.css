@@ -1,3 +1,55 @@
 .App {
   text-align: center;
+  color: aliceblue;
+}
+.navbar{
+  z-index: 2;
+}
+.navbar-nav .nav-item{
+  margin: 0.5875rem
+}
+.spacer{
+  height: 30px;
+}
+body{
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+.app_form{
+  
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  z-index: 1;
+  width: 60%;
+  margin: 5px 20% !important;
+  color: rgb(41, 41, 41) !important;
+  background-color: rgb(209, 209, 209) ;
+  border-radius: 50px;
+
+}
+.container-message{
+  margin:100px auto 150px auto;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  
+}
+.mytext{
+  width :200px;
+  text-align: center;
+
+  font-size: 5px;
+  color: transparent;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/ddm76zj-115c352d-c520-4e26-930a-8e2f95375ddb.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvODRkYzEzYjctYTJlNy00YjQ1LTgzZWMtMzExZTcyZTgyOTAwXC9kZG03NnpqLTExNWMzNTJkLWM1MjAtNGUyNi05MzBhLThlMmY5NTM3NWRkYi5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.dVUm946pmWfqokoevf_Rjbt-auQTb_fVHaJiShzkXCA');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #00000000;
+  font-weight: 900;
+  margin: auto;
 }

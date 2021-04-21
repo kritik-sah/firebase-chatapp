@@ -1,10 +1,13 @@
-import { Button , FormControl, Input, InputLabel } from '@material-ui/core';
+import {IconButton, FormControl, Input, InputLabel } from '@material-ui/core';
 
 import React , { useEffect, useState } from 'react';
 import './App.css';
 import Message from './components/Message';
 import firebase from 'firebase'
 import db from './components/firebase'
+import FlipMove from 'react-flip-move';
+import Nav from './components/Nav'
+import Text from './components/goku'
 
 // icons
 import SendIcon from '@material-ui/icons/Send';
@@ -17,12 +20,18 @@ function App() {
 
   useEffect(() => {
     db.collection('messages').orderBy('timestamp' , 'asc').onSnapshot(snapshot => {
-      setMessages(snapshot.docs.map(doc => doc.data()))
+      setMessages(snapshot.docs.map(doc => ({id : doc.id , message : doc.data()})))
     })
   } , []);
 
   useEffect(() => {
-    setUser(prompt("please enter your name?"))
+    let myuser = prompt("*please enter your name?" ,'guest')
+    if (myuser === null || myuser === ""){
+      setUser('GUEST');
+    }else {
+      setUser(myuser.toUpperCase());
+    }
+    
   }, []);
 
   const sendMessage = (event) => {
@@ -34,27 +43,44 @@ function App() {
 
     setInput("");
     event.preventDefault();
+    window.scrollTo(0, 99999999999999 , 'smooth') ;
+    
   }
   return (
+    <>
     <div className="App">
+      <Nav />
+      <div className="spacer"></div>
       <h1>hello & Welcome to Fire🔥 chat App.</h1>
+      <p>A place to paste some important links, code or to chill out! 😁</p>
+      <Text />
       <h2>WELCOME {user}</h2>
-
-      <form>
+      <div className="m-auto">
+      <form className="app_form">
       <FormControl>
         <InputLabel>Type your message here!</InputLabel>
         <Input value={input} onChange={event => setInput(event.target.value)}/>
       </FormControl>
-      <Button disabled={!input} type="submit" onClick={sendMessage} variant="outlined" color="primary"><SendIcon /></Button>
-      </form>
 
+      <IconButton disabled={!input} type="submit" onClick={sendMessage} variant="outlined" color="primary">
+      <SendIcon />
+      </IconButton>
+      </form>
+      </div>
+      
+      <div className="container-message">
+      <FlipMove>
     {
-      messages.map(message => (
-        <Message user={user} message={message}/>
+      messages.map(({id , message}) => (
+        <Message key={id} user={user} message={message}/>
+        
       ))
     }
+</FlipMove>
+      </div>
 
     </div>
+    </>
   );
 }
 
