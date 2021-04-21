@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "🔥fire Chat",
+  "name": "React.js firebase realtime chat application",
+  "author": {"itrebels" : "kritik sah"},
   "icons": [
     {
       "src": "favicon.ico",

@@ -24,10 +24,10 @@ const Nav = () => {
           <a className="nav-link" href="#CERTIFICATIONS">CERTIFICATIONS</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">TESTIMONIALS</a>
+          <a className="nav-link" target="_blank" rel="noreferrer" href="https://www.fiverr.com/kritiksah">TESTIMONIALS</a>
         </li>
         <li className="nav-item">
-          <a className="btn btn-outline-danger" href="https://wa.link/xpwssg" target="_blank" rel="nofollow">CONTACT US</a>
+          <a className="btn btn-outline-danger" href="https://wa.link/xpwssg" target="_blank" rel="noreferrer">CONTACT US</a>
         </li>
       </ul>
     </div>
