@@ -66,23 +66,6 @@ body{
     position: relative;
     
   }
-  .mytext{
-    width :75%;
-    text-align: center;
-  
-    font-size: 3px;
-    line-height: inherit;
-    color: transparent;
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/ddm76zj-115c352d-c520-4e26-930a-8e2f95375ddb.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvODRkYzEzYjctYTJlNy00YjQ1LTgzZWMtMzExZTcyZTgyOTAwXC9kZG03NnpqLTExNWMzNTJkLWM1MjAtNGUyNi05MzBhLThlMmY5NTM3NWRkYi5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.dVUm946pmWfqokoevf_Rjbt-auQTb_fVHaJiShzkXCA');
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #00000000;   
-    font-weight: 900;
-    margin: auto;
-  }
   .app_form{
   
     text-align: center;

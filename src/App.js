@@ -7,7 +7,7 @@ import firebase from 'firebase'
 import db from './components/firebase'
 import FlipMove from 'react-flip-move';
 import Nav from './components/Nav'
-import Text from './components/goku'
+
 
 // icons
 import SendIcon from '@material-ui/icons/Send';
@@ -54,7 +54,6 @@ function App() {
       <div className='container'>
       <h1>hello & Welcome to Fire🔥 chat App.</h1>
       <p>A place to paste some important links, code or to chill out! 😁</p>
-      <Text />
       <h2>WELCOME {user}</h2>
       </div>
       
